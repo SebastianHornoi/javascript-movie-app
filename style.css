@@ -1,0 +1,95 @@
+body{margin: 0px;padding: 0px;font-family: "Montserrat", sans-serif;}
+*{
+  box-sizing: border-box;
+}
+
+/*typography*/
+.bigTitle{font-size: 60px;}
+@media (max-width: 768px) {
+  .bigTitle{font-size: 25px;}
+}
+
+
+.page__container{width: 100%;height: 100vh;z-index: 99999;position: relative;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+.page__container::after{
+  content: " ";
+  width: 100%;height: 130vh;position: absolute;top: 0;left: 0;z-index: 2;background: #000;opacity: 0.7
+}
+.heroBackground{position: absolute;top: 0;left: 0;width: 100%;height: 130vh;object-fit: cover;z-index: 1}
+.logo{position: absolute;top: 10px;left: 50px;z-index: 3;color: #fff;font-size: 20px;}
+.main__content{display: flex;justify-content: center;align-items: center;flex-direction: column;text-align: center;transition: all 1s cubic-bezier(.215, .61, .355, 1)}
+.page__container h1{position: relative;z-index: 3;color:#fff;text-align: center;}
+.main__page__button{position: relative;z-index: 3;border: none;cursor: pointer;transform: scale(1);padding: 15px 80px;color: #fff;font-size: 20px;border-radius: 9px;background: #F50F1F;transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+.main__page__button:hover{box-shadow: 5px 5px 15px 5px rgba(245,15,31,0.4);color: #000}
+
+/*----------------------------------------------
+registrati section
+------------------------------------------------*/
+.registratiContainer{width: 100%;height: 100vh;position: absolute;top: 0;left: 0;z-index: 5;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+.registratiContainer::after{
+  content: " ";
+  width: 100%;height: 100vh;position: absolute;top: 0;left: 0;z-index: 7;background: #000;opacity: 0.7;
+}
+.registrati__heroBackground{position: absolute;top: 0;left: 0;width: 100%;height: 100vh;object-fit: cover;z-index: 6}
+.registrati__logo{position: absolute;top: 10px;left: 50px;z-index: 8;color: #fff;font-size: 20px;}
+
+.registratiForm{position: relative;z-index: 8;box-shadow: 5px 5px 15px 5px rgba(0,0,0,45);width: 350px;height: 500px;border-radius: 9px;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+.registratiForm::after{
+  content: " ";border-radius: 9px;
+  width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 9;background: #000;opacity: 0.6
+}
+.registratiForm h2{position: relative;z-index: 10;color: #fff}
+.registrati__button{position: relative;font-size: 20px;font-weight: bold;transition: all 1s cubic-bezier(.215, .61, .355, 1);z-index: 9999;margin-top: 40px;width: 80%;height: 40px;background: #F50F1F;color: #fff;border: none;border-radius: 9px}
+.registrati__button:hover{box-shadow: 5px 5px 15px 5px rgba(245,15,31,0.4);color: #000}
+input{position: relative;z-index: 10;width: 80%;border-radius: 9px;border: none;margin: 10px;height: 40px;padding: 10px;opacity: 1}
+.registrati__close__button{position: absolute;right: 20px;top: 25px;z-index: 10;}
+
+
+/*----------------------------------------------
+logged in  section
+------------------------------------------------*/
+.logged__in__container{width: 100%;height: 130vh;position: absolute;top: 0;left: 0;z-index: 5;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+.logged__in__container::after{
+  content: " ";
+  width: 100%;height: 130vh;position: absolute;top: 0;left: 0;z-index: 7;background: #000;opacity: 0.6;
+}
+.logged__in__heroBackground{position: absolute;top: 0;left: 0;width: 100%;height: 130vh;object-fit: cover;z-index: 6}
+.logged__in__menu{position: absolute;top: 0;left: 0;width: 100%;height: 60px;z-index: 10;display: flex;justify-content: space-between;align-items: center;padding: 0px 30px;}
+.logged__in__menu::after{
+  content: " ";
+  position: absolute;top: 0;left: 0;z-index: 11;background: #000;opacity: 0.7;width: 100%;height: 60px;
+}
+.logged__in__menu__logo__container{position: relative;z-index: 12}
+.logged__in__menu__logo__container a{color: #fff;text-decoration: none;}
+.logged__in__menu__content__container{display: flex;justify-content: center;align-items: center;position: relative;z-index: 12}
+.logged__in__menu__content__container p{padding: 0 20px;color: #fff;}
+.logged__in__menu__content__container img{width: 35px;height: auto;border-radius: 10px}
+
+.logged__in__content{position: relative;z-index: 100;width: 97%;height: 90%;margin-top: 70px;display: flex;flex-direction: column;}
+.logged__in__content__film{height: 30%;width: 100%;margin: auto;display: flex;flex-direction: column;position: relative;z-index: 100}
+.logged__in__content__film h3{position: relative;z-index: 100;color: #fff;margin: 2px;padding: 2px}
+.films__container{display: flex;position: relative;z-index: 1000;overflow-x: scroll;overflow-y: hidden;}
+.films__container::-webkit-scrollbar{display: none}
+.films__container img{margin: 5px;border-radius: 9px}
+.films__left__arrow{position: absolute;left: 10px;top: 100px;z-index: 10000;width: 30px!important;height: auto;}
+.films__right__arrow{position: absolute;right: 10px;top: 100px;z-index: 10000;width: 30px!important;height: auto;}
+
+.logged__in__content__serietv{height: 30%;width: 100%;margin: auto;display: flex;flex-direction: column;position: relative;z-index: 100}
+.logged__in__content__serietv h3{position: relative;z-index: 100;color: #fff;margin: 2px;padding: 2px}
+.serietv__container{display: flex;position: relative;z-index: 1000;overflow-x: scroll;overflow-y: hidden;}
+.serietv__container::-webkit-scrollbar{display: none}
+.serietv__container img{margin: 5px;border-radius: 9px}
+.serietv__left__arrow{position: absolute;left: 10px;top: 100px;z-index: 10000;width: 30px!important;height: auto;}
+.serietv__right__arrow{position: absolute;right: 10px;top: 100px;z-index: 10000;width: 30px!important;height: auto;}
+
+.logged__in__content__documentari{height: 30%;width: 100%;margin: auto;display: flex;flex-direction: column;position: relative;z-index: 100}
+.logged__in__content__documentari h3{position: relative;z-index: 100;color: #fff;margin: 2px;padding: 2px}
+.documentari__container{display: flex;position: relative;z-index: 1000;overflow-x: scroll;}
+.documentari__container::-webkit-scrollbar{display: none}
+.documentari__container img{margin: 5px;border-radius: 9px}
+.documentari__left__arrow{position: absolute;left: 10px;top: 100px;z-index: 10000;width: 30px!important;height: auto;}
+.documentari__right__arrow{position: absolute;right: 10px;top: 100px;z-index: 10000;width: 30px!important;height: auto;}
+
+.movieImg{object-fit: contain!important;height: 95%!important;margin: 10px;transform: scale(1)}
+.movieImg:hover{transform: scale(1.05);z-index: 9999;border-radius: 9px;}
+/*fine*/

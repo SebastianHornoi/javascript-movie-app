@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="glide.core.min.css">
+</head>
+<body onload="getMovie()">
+
+  <div class="page__container">
+    <img class="heroBackground" src="img/hero background.png" alt="">
+    <a href="index.html">
+    <h2 class="logo">MovieLogo</h2></a>
+    <div class="main__content">
+    <h1 class="bigTitle">Film, serie TV e tanto altro.<br> Senza limiti.</h1>
+    <button id="titolo" class="main__page__button" type="button" name="button">Accedi</button>
+    </div>
+  </div>
+
+
+  <div class="registratiContainer">
+    <img class="registrati__heroBackground" src="img/loginback.jpg" alt="">
+    <a href="index.html">
+    <h2 class="registrati__logo">MovieLogo</h2></a>
+    <div class="form">
+      <form class="registratiForm" action="index.html" method="post">
+         <h2>Registrati</h2>
+         <a href="index.html">
+         <img class="registrati__close__button" src="img/x-button.png" alt=""></a>
+         <input id="formNome" type="text" name="" value="" placeholder="Nome">
+         <input id="formPassword" type="password" name="" value="" placeholder="Password">
+         <button type="submit" class="registrati__button">Registrati</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="logged__in__container">
+    <img class="logged__in__heroBackground" src="img/hero background.png" alt="">
+    <div class="logged__in__menu">
+      <div class="logged__in__menu__logo__container">
+        <a href="index.html">
+        <h2 class="logged__in__logo">MovieLogo</h2></a>
+      </div>
+      <div class="logged__in__menu__content__container">
+        <img src="img/search.png" alt="">
+        <p>Ciao <b class="user"></b></p>
+        <img src="img/user.png" alt="">
+      </div>
+    </div>
+
+
+    <div class="logged__in__content">
+       <div class="logged__in__content__film">
+          <h3>Popolari</h3>
+          <img  id="filmLeftArrow" class="films__left__arrow" src="img/left.png" alt="">
+          <img id="filmRightArrow"  class="films__right__arrow" src="img/right.png" alt="">
+                <div id="films" class="films__container">
+
+                </div>
+       </div>
+       <div class="logged__in__content__serietv">
+          <h3>Più votati</h3>
+          <img id="serietvLeftArrow" class="serietv__left__arrow" src="img/left.png" alt="">
+          <img id="serietvRightArrow" class="serietv__right__arrow" src="img/right.png" alt="">
+                <div class="serietv__container">
+
+                </div>
+
+       </div>
+       <div class="logged__in__content__documentari">
+          <h3>Imminenti</h3>
+          <img id="documentariLeftArrow" class="documentari__left__arrow" src="img/left.png" alt="">
+          <img id="documentariRightArrow" class="documentari__right__arrow" src="img/right.png" alt="">
+                <div class="documentari__container">
+
+                </div>
+       </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="app.js" ></script>
+</body>
+</html>
