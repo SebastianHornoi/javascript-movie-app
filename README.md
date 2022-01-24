@@ -1,5 +1,5 @@
 # Movie App
-Movie App:  https://sebastianhornoi.github.io/Meal-App/
+Movie App:   https://sebastianhornoi.github.io/movie-app/
 ### Obiettivo proggetto: 
 Realizzare una movie app stile netflix, utilizzando il local storage per simulare una login ed una registrazione.
 
